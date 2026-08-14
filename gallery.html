@@ -1,15 +1,21 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <title>IGU-CSRS: Photo Galleries</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="themes.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+html,body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Roboto", sans-serif;
+}
+
 .w3-sidebar {
   z-index: 3;
   width: 250px;
@@ -18,129 +24,357 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   height: inherit;
 }
 </style>
+
 <body>
 
-<!-- top bar with sidebar button !-->    
+<!-- top bar with sidebar button -->
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-               <h1 class="w3-text-light-green" style="font-family: 'Poppins', sans-serif;">IGU Commission on the Sustainability of Rural Systems</h1>
+
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+       href="javascript:void(0)"
+       onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <h1 class="w3-text-light-green"
+        style="font-family: 'Poppins', sans-serif;">
+      IGU Commission on the Sustainability of Rural Systems
+    </h1>
+
   </div>
 </div>
-    
+
+
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left"
+     id="mySidebar">
+
+  <a href="javascript:void(0)"
+     onclick="w3_close()"
+     class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large"
+     title="Close Menu">
     <i class="fa fa-remove"></i>
   </a>
-  <a class="w3-bar-item w3-button w3-hover-green" href="index.html" style="text-align: center;font-family: 'Poppins', sans-serif;">Home</a>
-  <a class="w3-bar-item w3-button w3-hover-green" href="objectives.html" style="text-align: center;font-family: 'Poppins', sans-serif;">Objectives and Research Tasks</a>
-  <a class="w3-bar-item w3-button w3-hover-green" href="history.html" style="text-align: center;font-family: 'Poppins', sans-serif;">Our History</a>
-  <a class="w3-bar-item w3-button w3-hover-green" href="committee.html" style="text-align: center;font-family: 'Poppins', sans-serif;">Steering Committee</a>
-  <a class="w3-bar-item w3-button w3-hover-green" href="colloquia.html" style="text-align: center;font-family: 'Poppins', sans-serif;">Past Colloquia</a>
-      <a class="w3-bar-item w3-button w3-hover-green" href="reports.html" style="text-align: center;font-family: 'Poppins', sans-serif;">Reports and Publications</a>
-  <a class="w3-bar-item w3-button w3-hover-green" href="gallery.html" style="text-align: center;font-family: 'Poppins', sans-serif;">Photo Gallery</a>
-    <a class="w3-bar-item w3-button w3-hover-green" href="memoriam.html" style="text-align: center;font-family: 'Poppins', sans-serif;">In Memoriam</a>
-  <a class="w3-bar-item w3-button w3-hover-green" href="links.html" style="text-align: center;font-family: 'Poppins', sans-serif;">Contact and Links</a>
-    <img src="site_images/CSRS-Logo-reversecolor-white.png" style="width:75%; margin-left:30px;margin-top: 20px;">
+
+  <a class="w3-bar-item w3-button w3-hover-green"
+     href="index.html"
+     style="text-align: center;font-family: 'Poppins', sans-serif;">
+    Home
+  </a>
+
+  <a class="w3-bar-item w3-button w3-hover-green"
+     href="objectives.html"
+     style="text-align: center;font-family: 'Poppins', sans-serif;">
+    Objectives and Research Tasks
+  </a>
+
+  <a class="w3-bar-item w3-button w3-hover-green"
+     href="history.html"
+     style="text-align: center;font-family: 'Poppins', sans-serif;">
+    Our History
+  </a>
+
+  <a class="w3-bar-item w3-button w3-hover-green"
+     href="committee.html"
+     style="text-align: center;font-family: 'Poppins', sans-serif;">
+    Steering Committee
+  </a>
+
+  <a class="w3-bar-item w3-button w3-hover-green"
+     href="colloquia.html"
+     style="text-align: center;font-family: 'Poppins', sans-serif;">
+    Past Colloquia
+  </a>
+
+  <a class="w3-bar-item w3-button w3-hover-green"
+     href="reports.html"
+     style="text-align: center;font-family: 'Poppins', sans-serif;">
+    Reports and Publications
+  </a>
+
+  <a class="w3-bar-item w3-button w3-hover-green"
+     href="gallery.html"
+     style="text-align: center;font-family: 'Poppins', sans-serif;">
+    Photo Gallery
+  </a>
+
+  <a class="w3-bar-item w3-button w3-hover-green"
+     href="memoriam.html"
+     style="text-align: center;font-family: 'Poppins', sans-serif;">
+    In Memoriam
+  </a>
+
+  <a class="w3-bar-item w3-button w3-hover-green"
+     href="links.html"
+     style="text-align: center;font-family: 'Poppins', sans-serif;">
+    Contact and Links
+  </a>
+
+  <img src="site_images/CSRS-Logo-reversecolor-white.png"
+       style="width:75%; margin-left:30px;margin-top:20px;">
+
 </nav>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px; padding-top: 25px">
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large"
+     onclick="w3_close()"
+     style="cursor:pointer"
+     title="close side menu"
+     id="myOverlay">
+</div>
+
+
+<!-- Main content -->
+<div class="w3-main" style="margin-left:250px; padding-top:25px">
 
   <div class="w3-row w3-padding-64">
 
-      <!-- first photo grid-->
     <div class="w3-twothird w3-container">
-        <div class="w3-row-padding">
-<div class="w3-third w3-container w3-margin-bottom">
-      <a href="gallery_italy.html"><img src="site_images/Italy_2026/grupo_terraza.jpg" alt="photo1" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-	  <p><b><a class="reglink" href="gallery_italy.html">Italy 2026</a></b></p>
+
+
+      <!-- FIRST PHOTO GRID -->
+      <div class="w3-row-padding">
+
+        <!-- Italy 2026 -->
+        <div class="w3-third w3-container w3-margin-bottom">
+          <a href="gallery_italy.html">
+            <img src="site_images/Italy_2026/grupo_terraza.jpg"
+                 alt="Italy 2026"
+                 style="width:100%"
+                 class="w3-hover-opacity">
+          </a>
+
+          <div class="w3-container w3-white">
+            <p>
+              <b>
+                <a class="reglink" href="gallery_italy.html">
+                  Italy 2026
+                </a>
+              </b>
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Philippines 2025 -->
+        <div class="w3-third w3-container w3-margin-bottom">
+          <a href="gallery_phillipines_2025.html">
+            <img src="site_images/phillipines_2025/0-grupo.jpg"
+                 alt="Phillipines 2025"
+                 style="width:100%"
+                 class="w3-hover-opacity">
+          </a>
+
+          <div class="w3-container w3-white">
+            <p>
+              <b>
+                <a class="reglink" href="gallery_phillipines_2025.html">
+                  Phillipines 2025
+                </a>
+              </b>
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Mendoza 2024 -->
+        <div class="w3-third w3-container w3-margin-bottom">
+          <a href="gallery_mendoza.html">
+            <img src="site_images/mendoza_2024/17-grupo.jpg"
+                 alt="Mendoza, Argentina 2024"
+                 style="width:100%"
+                 class="w3-hover-opacity">
+          </a>
+
+          <div class="w3-container w3-white">
+            <p>
+              <b>
+                <a class="reglink" href="gallery_mendoza.html">
+                  Mendoza, Argentina 2024
+                </a>
+              </b>
+            </p>
+          </div>
+        </div>
+
       </div>
-    </div>
-<div class="w3-third w3-container w3-margin-bottom">
-      <a href="gallery_phillipines_2025.html"><img src="site_images/phillipines_2025/0-grupo.jpg" alt="photo1" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-	  <p><b><a class="reglink" href="gallery_phillipines_2025.html">Phillipines 2025</a></b></p>
+
+
+      <!-- SECOND PHOTO GRID -->
+      <div class="w3-row-padding">
+
+        <!-- Minnesota-Wisconsin 2019 -->
+        <div class="w3-third w3-container w3-margin-bottom">
+          <a href="gallery_minnesota_wisconsin.html">
+            <img src="site_images/USA_2019/DSC_0133.JPG"
+                 alt="Minnesota-Wisconsin, USA 2019"
+                 style="width:100%"
+                 class="w3-hover-opacity">
+          </a>
+
+          <div class="w3-container w3-white">
+            <p>
+              <b>
+                <a class="reglink" href="gallery_minnesota_wisconsin.html">
+                  Minnesota-Wisconsin, USA 2019
+                </a>
+              </b>
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Spain 2018 -->
+        <div class="w3-third w3-container w3-margin-bottom">
+          <a href="gallery_spain.html">
+            <img src="site_images/DSC_0806.JPG"
+                 alt="Spain 2018"
+                 style="width:100%"
+                 class="w3-hover-opacity">
+          </a>
+
+          <div class="w3-container w3-white">
+            <p>
+              <b>
+                <a class="reglink" href="gallery_spain.html">
+                  Spain 2018
+                </a>
+              </b>
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Vietnam 2017 -->
+        <div class="w3-third w3-container w3-margin-bottom">
+          <a href="gallery_vietnam.html">
+            <img src="site_images/photo15.jpg"
+                 alt="Vietnam 2017"
+                 style="width:100%"
+                 class="w3-hover-opacity">
+          </a>
+
+          <div class="w3-container w3-white">
+            <p>
+              <b>
+                <a class="reglink" href="gallery_vietnam.html">
+                  Vietnam 2017
+                </a>
+              </b>
+            </p>
+          </div>
+        </div>
+
       </div>
-    </div>
-<div class="w3-third w3-container w3-margin-bottom">
-      <a href="gallery_mendoza.html"><img src="site_images/mendoza_2024/17-grupo.jpg" alt="photo2" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-	  <p><b><a class="reglink" href="gallery_mendoza.html">Mendoza, Argentina 2024</a></b></p>
+
+
+      <!-- THIRD PHOTO GRID -->
+      <div class="w3-row-padding">
+
+        <!-- Belgium 2016 -->
+        <div class="w3-third w3-container w3-margin-bottom">
+          <a href="gallery_belgium.html">
+            <img src="site_images/Belgium_2016/6.JPG"
+                 alt="Belgium 2016"
+                 style="width:100%"
+                 class="w3-hover-opacity">
+          </a>
+
+          <div class="w3-container w3-white">
+            <p>
+              <b>
+                <a class="reglink" href="gallery_belgium.html">
+                  Belgium 2016
+                </a>
+              </b>
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Portugal 2015 -->
+        <div class="w3-third w3-container w3-margin-bottom">
+          <a href="gallery_portugal.html">
+            <img src="site_images/IMG_0698.jpg"
+                 alt="Portugal 2015"
+                 style="width:100%"
+                 class="w3-hover-opacity">
+          </a>
+
+          <div class="w3-container w3-white">
+            <p>
+              <b>
+                <a class="reglink" href="gallery_portugal.html">
+                  Portugal 2015
+                </a>
+              </b>
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Japan 2013 -->
+        <div class="w3-third w3-container">
+          <a href="gallery_japan.html">
+            <img src="site_images/Japan_2013/2.jpg"
+                 alt="Japan 2013"
+                 style="width:100%"
+                 class="w3-hover-opacity">
+          </a>
+
+          <div class="w3-container w3-white">
+            <p>
+              <b>
+                <a class="reglink" href="gallery_japan.html">
+                  Japan 2013
+                </a>
+              </b>
+            </p>
+          </div>
+        </div>
+
       </div>
+
     </div>
-			<!-- Second Photo Grid-->
-<div class="w3-twothird w3-container">
-			<div class="w3-third w3-container w3-margin-bottom">
-      <a href="gallery_minnesota_wisconsin.html"><img src="site_images/USA_2019/DSC_0133.JPG" alt="photo3" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-	  <p><b><a class="reglink" href="gallery_minnesota_wisconsin.html">Minnesota-Wisconsin, USA 2019</a></b></p>
-      </div>
-    </div>
-	<div class="w3-third w3-container w3-margin-bottom">
-      <a href="gallery_spain.html"><img src="site_images/DSC_0806.JPG" alt="photo4" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b><a class="reglink" href="gallery_spain.html">Spain 2018</a></b></p>
-      </div>
-    </div>
-<div class="w3-third w3-container w3-margin-bottom">
-      <a href="gallery_vietnam.html"><img src="site_images/photo15.jpg" alt="photo5" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b><a class="reglink" href="gallery_vietnam.html">Vietnam 2017</a></b></p>
-      </div>
-    </div>
-        	  
- <!-- Third Photo Grid-->
-	 <div class="w3-third w3-container w3-margin-bottom">
-      <a href="gallery_belgium.html"><img src="site_images/Belgium_2016/6.JPG" alt="photo3" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b><a class="reglink" href="gallery_belgium.html">Belgium 2016</a></b></p>    
-      </div>
-    </div>	
-   
-<div class="w3-third w3-container w3-margin-bottom">
-      <a href="gallery_portugal.html"><img src="site_images/IMG_0698.jpg" alt="photo4" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b><a class="reglink" href="gallery_portugal.html">Portugal 2015</a></b></p>
-      </div>
-    </div>
-<div class="w3-third w3-container">
-      <a href="gallery_japan.html"><img src="site_images/Japan_2013/2.jpg" alt="photo5" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b><a class="reglink" href="gallery_japan.html">Japan 2013</a></b></p>
-      </div>
-    </div>
-		</div>	
-		</div>	
-	</div>
-    </div>
-     
+
+  </div>
+
+
+  <!-- Footer -->
   <footer id="myFooter">
+
     <div class="w3-container w3-theme-l2 w3-padding-32">
       <h4>©2026 IGU-CSRS</h4>
     </div>
 
     <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      <p>
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp"
+           target="_blank">
+          w3.css
+        </a>
+      </p>
     </div>
+
   </footer>
+
 
 <!-- END MAIN -->
 </div>
 
+
 <script>
+
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
 
 // Get the DIV with overlay effect
 var overlayBg = document.getElementById("myOverlay");
 
-// Toggle between showing and hiding the sidebar, and add overlay effect
+// Toggle between showing and hiding the sidebar
 function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
@@ -156,8 +390,10 @@ function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
 }
+
 </script>
-    
 
 </body>
 </html>
+```
+
